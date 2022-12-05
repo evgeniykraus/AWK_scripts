@@ -1,0 +1,254 @@
+/c/Users/kraus.ev/Desktop/AWK/AWK/test/a.e.4.sh
+SUCCESS
+/c/Users/kraus.ev/Desktop/AWK/AWK/test/a.e.5.sh
+SUCCESS
+/c/Users/kraus.ev/Desktop/AWK/AWK/test/alarm-error-1.sh
+SUCCESS
+/c/Users/kraus.ev/Desktop/AWK/AWK/test/alarm-error-2.sh
+SUCCESS
+/c/Users/kraus.ev/Desktop/AWK/AWK/test/alarm-error-3.sh
+SUCCESS
+/c/Users/kraus.ev/Desktop/AWK/AWK/test/alarm-norm.sh
+SUCCESS
+/c/Users/kraus.ev/Desktop/AWK/AWK/test/bound-window-1.sh
+SUCCESS
+/c/Users/kraus.ev/Desktop/AWK/AWK/test/c.e.1.sh
+6,10c6,8
+< cooler error: temp must be between 18 and 26
+< 0
+< 0
+< 0
+< 0
+---
+> cooler error: room must be between 0 and 9
+> cooler error: room must be between 0 and 9
+> error: unknown command
+FAIL
+/c/Users/kraus.ev/Desktop/AWK/AWK/test/c.e.2.sh
+SUCCESS
+/c/Users/kraus.ev/Desktop/AWK/AWK/test/c.e.3.sh
+2,21c2,11
+< 0
+< 0
+< 0
+< 0
+< 0
+< 0
+< 0
+< 0
+< 0
+< 0
+< 0
+< 0
+< 0
+< 0
+< 0
+< 0
+< 0
+< 0
+< 0
+< 0
+---
+> stat
+> cooler 2 18С
+> alarm off
+> cooler 2 18С
+> stat
+> cooler 2 off
+> stat
+> alarm on
+> stat
+> cooler 2 18С
+FAIL
+/c/Users/kraus.ev/Desktop/AWK/AWK/test/c.e.4.sh
+7,16c7,12
+< 0
+< 0
+< 0
+< 0
+< 0[\/][  ][  ][\/][  ][  ][  ][  ][  ][  ]
+< 0
+< 0
+< 0
+< 0
+< 0[\/][  ][  ][\/][  ][  ][  ][  ][  ][  ]
+---
+> cooler error: window 0 opened
+> success: cooler 2 set to 18C
+> 0[\/][  ][18][\/][  ][  ][  ][  ][  ][  ]
+> cooler error: window 3 opened
+> success: cooler 9 set to 22C
+> 0[\/][  ][18][\/][  ][  ][  ][  ][  ][22]
+18a15,20
+> 0[  ][  ][18][  ][  ][  ][  ][  ][  ][22]
+> success: cooler 3 set to 20C
+> 0[  ][  ][18][20][  ][  ][  ][  ][  ][22]
+> success: cooler 2 disabled
+> success: cooler 9 disabled
+> success: cooler 3 disabled
+20,28c22,23
+< success: cooler 3 set to 20
+< 0[  ][  ][  ][20][  ][  ][  ][  ][  ][  ]
+< cooler error: 2 already off
+< cooler error: 9 already off
+< 0
+< 0
+< 0[  ][  ][  ][20][  ][  ][  ][  ][  ][  ]
+< alarm error: cooler 3 enabled
+< 0[  ][  ][  ][20][  ][  ][  ][  ][  ][  ]
+---
+> success: alarm enabled
+> 1[  ][  ][  ][  ][  ][  ][  ][  ][  ][  ]
+FAIL
+/c/Users/kraus.ev/Desktop/AWK/AWK/test/c.e.5.sh
+4,6c4,5
+< 0
+< 0
+< 0[  ][  ][  ][  ][  ][  ][  ][  ][  ][  ]
+---
+> success: cooler 3 set to 18C
+> 0[  ][  ][  ][18][  ][  ][  ][  ][  ][  ]
+9c8
+< cooler error: 3 already off
+---
+> success: cooler 3 disabled
+FAIL
+/c/Users/kraus.ev/Desktop/AWK/AWK/test/c.n.1.sh
+11c11
+< success: cooler 1 set to 23
+---
+> success: cooler 1 set to 23C
+24c24
+< 0[26][26][26][18][  ][  ][  ][  ][  ][  ]
+---
+> 0[26][26][26][18  ][  ][  ][  ][  ][  ][  ]
+29c29
+< 0[26][26][26][22][18][26][  ][  ][  ][  ]
+---
+> 0[26][26][26][26][18][26][  ][  ][  ][  ]
+31c31
+< 0[18][26][26][22][18][26][  ][  ][  ][  ]
+---
+> 0[18][26][26][26][18][26][  ][  ][  ][  ]
+34c34
+< 0[18][26][26][22][18][20][22][  ][  ][  ]
+---
+> 0[18][26][26][26][18][20][22][  ][  ][  ]
+36c36
+< 0[18][26][26][22][18][20][22][22][  ][  ]
+---
+> 0[18][26][26][26][18][20][22][22][  ][  ]
+38c38
+< 0[18][26][26][22][18][20][22][22][  ][18]
+---
+> 0[18][26][26][26][18][20][22][22][  ][18]
+40c40
+< 0[18][26][26][22][18][20][22][22][18][18]
+---
+> 0[18][26][26][26][18][20][22][22][18][18]
+FAIL
+/c/Users/kraus.ev/Desktop/AWK/AWK/test/c.n.2.sh
+SUCCESS
+/c/Users/kraus.ev/Desktop/AWK/AWK/test/close-window-1.sh
+SUCCESS
+/c/Users/kraus.ev/Desktop/AWK/AWK/test/close-window-2.sh
+18d17
+< 
+FAIL
+/c/Users/kraus.ev/Desktop/AWK/AWK/test/error-window-1.sh
+3,4c3
+< 0
+< 0
+---
+> error: unknown command
+FAIL
+/c/Users/kraus.ev/Desktop/AWK/AWK/test/error-window-2.sh
+3,4c3
+< 0
+< 0
+---
+> error: unknown command
+FAIL
+/c/Users/kraus.ev/Desktop/AWK/AWK/test/error-window-3.sh
+SUCCESS
+/c/Users/kraus.ev/Desktop/AWK/AWK/test/error-window-4.sh
+6,9c6,7
+< 0
+< 0
+< 0
+< 0
+---
+> error: unknown command
+> error: unknown command
+11,14c9,10
+< 0
+< 0
+< 0
+< 0
+---
+> error: unknown command
+> error: unknown command
+17,24c13,16
+< 0
+< 0
+< 0
+< 0
+< 0
+< 0
+< 0
+< 0
+---
+> error: unknown command
+> error: unknown command
+> error: unknown command
+> error: unknown command
+FAIL
+/c/Users/kraus.ev/Desktop/AWK/AWK/test/error-window-5.sh
+SUCCESS
+/c/Users/kraus.ev/Desktop/AWK/AWK/test/error-window-6.sh
+SUCCESS
+/c/Users/kraus.ev/Desktop/AWK/AWK/test/n.1.sh
+SUCCESS
+/c/Users/kraus.ev/Desktop/AWK/AWK/test/o.e.1.sh
+3,4c3,4
+<   # get set!
+<   #     go!
+---
+> error: unknown command
+> error: unknown command
+8,11c8,9
+< 0
+< 0
+< 0
+< 0
+---
+> error: unknown command
+> error: unknown command
+30,33c28,29
+< 0
+< 0
+< 0
+< 0
+---
+> error: unknown command
+> error: unknown command
+42,43c38
+< 0
+< 0
+---
+> error: unknown command
+57d51
+< 
+FAIL
+/c/Users/kraus.ev/Desktop/AWK/AWK/test/open-window-1.sh
+12c12
+< 0[\/][\/][\/][\/][\/][\/][  ][  ][  ][  ]
+---
+> 0[\/][\/][\/][\/][\/][  ][  ][  ][  ][  ]
+FAIL
+/c/Users/kraus.ev/Desktop/AWK/AWK/test/w.n.1.sh
+SUCCESS
+/c/Users/kraus.ev/Desktop/AWK/AWK/test/w.n.2.sh
+SUCCESS
+/c/Users/kraus.ev/Desktop/AWK/AWK/test/w.n.3.sh
+SUCCESS

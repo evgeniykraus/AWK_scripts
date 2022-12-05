@@ -1,0 +1,19 @@
+# normal flow
+
+stat
+alarm off
+stat
+window 0 open
+stat
+window 9 open
+stat
+cooler 1 20C
+stat
+cooler 1 off
+stat
+window 0 close
+stat
+window 9 close
+stat
+alarm on
+stat

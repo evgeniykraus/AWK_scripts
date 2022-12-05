@@ -1,0 +1,50 @@
+# e3t45ertgdgdgfdfg
+stat
+
+cooler 9 off
+cooler 94 off
+alarm off
+stat
+cooler 9 off
+cooler 9 99C
+cooler 5 18C
+stat
+cooler 0 22C
+cooler rwsersdf
+alarm on
+window 1 open
+stat
+window 078 open
+window 0 open
+window 0 close
+window 1 close
+window 3 open
+state
+stat
+alarm on
+alarm off
+window 1 close
+window 3 close
+cooler 0 off
+cooler 5 off
+alarm on
+alarm on
+# normal flow
+
+stat
+alarm off
+stat
+window 0 open
+stat
+window 9 open
+stat
+cooler 1 20C
+stat
+cooler 1 off
+stat
+window 0 close
+stat
+window 9 close
+stat
+alarm on
+stat
